@@ -88,12 +88,12 @@
 
   <button class="btn bg-[#894189] rounded-[50px] text-white text-xl border-none">Life
   <img src="images/hart.png" alt="">
-  <span>1</span>
+  <span id="current-life">5</span>
   </button> 
 
   <button class="btn bg-[#360490] rounded-[50px] text-white text-xl border-none">Score
   <img src="images/dolar.png" alt="">
-  <span>1</span>
+  <span id="current-score">0</span>
   </button>  
 
         </div>
@@ -102,13 +102,14 @@
  <!-- Play ground end -->
 
  <!-- Final score  -->
-    <section class="score text-white flex items-center justify-center min-h-screen hidden">
+    <section id="score-bode" class="score text-white flex items-center justify-center min-h-screen hidden">
      <div class="text-center space-y-6 bg-[#FFFFFF33] p-[30px] rounded-xl">
+      <h4>Game over !</h4>
       <h1 class="text-6xl">
         <span class="font-bold">Score : </span>
-        <span>14</span>
+        <span id="scoreon-bode">0</span>
       </h1>
-      <button class="btn ">Play Again</button>
+      <button onclick="play()" class="btn ">Play Again</button>
       <p class="">Practice will make you Pro</p>
      </div>
     </section>
